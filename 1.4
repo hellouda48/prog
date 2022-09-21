@@ -1,0 +1,61 @@
+Algoritmo sin_titulo
+	Escribir "Teclea cuantas tarjetas tienes(maximo 5)"
+	Leer n
+	Segun n Hacer
+		1:
+			Escribir "Que tipo de tarjeta tienes"
+			leer n1
+		2:
+			Escribir "Que tipo de tarjetas tienes"
+			Leer n1
+			Leer n2
+			Escribir "Quieres elegir tu propia tarjeta"
+			Leer resp
+			Si resp="si" Entonces
+				Leer resp2
+				Segun resp2 Hacer
+					1:
+						tarj=n1
+					2:
+						tarj=n2
+					
+				Fin Segun
+			SiNo
+				Si n1<n2 Entonces
+					tarj=n2
+				SiNo
+					tarj=2
+				Fin Si
+			Fin Si
+			
+		3:
+			Escribir "Que tipo de tarjetas tienes"
+			Leer n1
+			Leer n2
+			Leer n3
+			Si n1<n2 Entonces
+				Si n2<n3 Entonces
+					tarj=n3
+				SiNo
+					tarj=n2
+				Fin Si
+			SiNo
+				Si n1<n3 Entonces
+					tarj=n1
+				SiNo
+					tarj=n3
+				Fin Si
+			Fin Si
+		De Otro Modo:
+			Escribir "Ingresaste una cantidad no valida de tarjetas"
+	Fin Segun
+	
+	Segun tarj Hacer
+		1:
+			secuencia_de_acciones_1
+		2:
+			secuencia_de_acciones_2
+		3:
+			secuencia_de_acciones_3
+	Fin Segun
+FinAlgoritmo
